@@ -71,7 +71,13 @@ class _trangChonCheDoState extends State<trangChonCheDo> {
                             shape: RoundedRectangleBorder(
                                 borderRadius: BorderRadius.circular(30)),
                           ),
-                          onPressed: () {},
+                          onPressed: () {
+                            Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                  builder: (context) => manhinhvotranDAUDON(),
+                                ));
+                          },
                           child: Image.asset(
                             'assets/2.png',
                           )))),
