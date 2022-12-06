@@ -222,7 +222,7 @@ class _manHinhThonhKeNState extends State<manHinhThonhKe> {
                                           fontWeight: FontWeight.bold),
                                     ),
                                     Text(
-                                      "  9200 ",
+                                      "  +92 ",
                                       style: TextStyle(
                                           color: Colors.white,
                                           fontSize: 20,
