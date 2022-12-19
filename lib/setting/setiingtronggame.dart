@@ -164,11 +164,12 @@ class _setiingingameState extends State<setiingingame> {
                               height: 82.5,
                               child: TextButton(
                                   onPressed: () {
-                                    Navigator.push(
+                                    Navigator.pushAndRemoveUntil(
                                         context,
                                         MaterialPageRoute(
-                                          builder: (context) => manhinhchinh(),
-                                        ));
+                                            builder: (context) =>
+                                                manhinhchinh()),
+                                        (route) => false);
                                   },
                                   child: Text(
                                     'Thoát',
