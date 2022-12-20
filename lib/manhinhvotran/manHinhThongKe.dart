@@ -35,7 +35,7 @@ class _manHinhThonhKeNState extends State<manHinhThonhKe> {
                             ),
                             Column(
                               children: [
-                                Text(
+                                const Text(
                                   'Kaka',
                                   style: TextStyle(
                                       color: Colors.white,
@@ -43,7 +43,8 @@ class _manHinhThonhKeNState extends State<manHinhThonhKe> {
                                       fontWeight: FontWeight.bold),
                                 ),
                                 Container(
-                                  color: Color.fromARGB(161, 107, 106, 104),
+                                  color:
+                                      const Color.fromARGB(161, 107, 106, 104),
                                   margin: EdgeInsets.all(2),
                                   child: Text("Đấu rank",
                                       style: TextStyle(
@@ -237,7 +238,7 @@ class _manHinhThonhKeNState extends State<manHinhThonhKe> {
                         ),
                       ),
                       Container(
-                          decoration: BoxDecoration(
+                          decoration: const BoxDecoration(
                             color: Color.fromARGB(190, 125, 60, 143),
                             borderRadius: BorderRadius.only(
                                 topRight: Radius.circular(20),
@@ -250,19 +251,21 @@ class _manHinhThonhKeNState extends State<manHinhThonhKe> {
                           height: 82.5,
                           child: TextButton(
                               onPressed: () {
-                                Navigator.push(
+                                Navigator.pop(context);
+                                Navigator.pushAndRemoveUntil(
                                     context,
                                     MaterialPageRoute(
                                       builder: (context) => trangChonCheDo(),
-                                    ));
+                                    ),
+                                    (route) => false);
                               },
-                              child: Text(
+                              child: const Text(
                                 'Play again',
                                 style: TextStyle(
                                     color: Colors.white, fontSize: 30),
                               ))),
                       Container(
-                          decoration: BoxDecoration(
+                          decoration: const BoxDecoration(
                             color: Colors.white,
                             borderRadius: BorderRadius.only(
                                 topRight: Radius.circular(20),
@@ -275,13 +278,14 @@ class _manHinhThonhKeNState extends State<manHinhThonhKe> {
                           height: 82.5,
                           child: TextButton(
                               onPressed: () {
-                                Navigator.push(
+                                Navigator.pushAndRemoveUntil(
                                     context,
                                     MaterialPageRoute(
                                       builder: (context) => manhinhchinh(),
-                                    ));
+                                    ),
+                                    (route) => false);
                               },
-                              child: Text(
+                              child: const Text(
                                 'Home',
                                 style: TextStyle(
                                     color: Colors.black, fontSize: 25),

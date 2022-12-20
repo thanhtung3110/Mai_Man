@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_application_1/setting/setiingtronggame.dart';
+
 import 'package:flutter_application_1/trangchu/footer_header/header.dart';
 import 'package:flutter_application_1/trangchu/noidung/noidungrangchu.dart';
 import 'package:flutter_application_1/trangchu/sale/sale.dart';
