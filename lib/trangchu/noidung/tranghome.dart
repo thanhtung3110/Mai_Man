@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_application_1/lichsudau/lichsudau.dart';
+import 'package:flutter_application_1/thongtin/thongtincanhan.dart';
 
 class player extends StatefulWidget {
   const player({super.key});
@@ -27,7 +28,13 @@ class _playerState extends State<player> {
                           shape: RoundedRectangleBorder(
                               borderRadius: BorderRadius.circular(30)),
                           padding: EdgeInsets.all(20)),
-                      onPressed: () {},
+                      onPressed: () {
+                        Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                              builder: (context) => Thongtin(),
+                            ));
+                      },
                       child: Text(
                         "Thông tin",
                         style: TextStyle(
