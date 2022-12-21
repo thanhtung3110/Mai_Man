@@ -1,4 +1,6 @@
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_application_1/Login/Login.dart';
 
 class trangsrttinghome extends StatefulWidget {
   const trangsrttinghome({super.key});
@@ -127,7 +129,11 @@ class _trangsrttinghomeState extends State<trangsrttinghome> {
             color: Colors.red[300],
           ),
           child: TextButton(
-            onPressed: () => Navigator.pop(context, 'OK'),
+            onPressed: () async {
+              await FirebaseAuth.instance.signOut();
+              Navigator.of(context)
+                  .push(MaterialPageRoute(builder: (context) => login()));
+            },
             child: const Text(
               'Đăng xuất',
               style: TextStyle(

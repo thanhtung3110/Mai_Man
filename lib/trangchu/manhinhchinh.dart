@@ -17,17 +17,19 @@ class _manhinhchinhState extends State<manhinhchinh> {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-        debugShowCheckedModeBanner: false,
-        home: SafeArea(
-            child: Scaffold(
-                body: Container(
-                    color: Colors.black,
-                    child: Container(
-                        child: Column(children: [
-                      Header(),
-                      trangcontent(),
-                      sale(),
-                      Footer()
-                    ]))))));
+      debugShowCheckedModeBanner: false,
+      home: SafeArea(
+        child: Scaffold(
+          body: Container(
+            color: Colors.black,
+            child: Container(
+              child: Column(
+                children: [Header(), trangcontent(), sale(), Footer()],
+              ),
+            ),
+          ),
+        ),
+      ),
+    );
   }
 }

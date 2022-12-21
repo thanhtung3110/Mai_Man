@@ -249,9 +249,8 @@ class _manhinhvotranDAUDONState extends State<manhinhvotranDAUDON> {
   }
 }
 
-outGame(){
+outGame() {}
 
-}
 //heard tron gamr
 class hearderGame extends StatefulWidget {
   const hearderGame({super.key});
@@ -599,10 +598,10 @@ class _setiingingameState extends State<setiingingame> {
                               height: 82.5,
                               child: TextButton(
                                   onPressed: () {
-                                       setState(() {
-          isPressed = false;
-          index = 0;
-        });
+                                    setState(() {
+                                      isPressed = false;
+                                      index = 0;
+                                    });
                                     Navigator.pushAndRemoveUntil(
                                         context,
                                         MaterialPageRoute(
